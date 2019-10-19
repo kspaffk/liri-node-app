@@ -17,7 +17,7 @@ switch (requestType) {
         }
 
         spotify.search(
-          { type: "track", query: searchItem, limit: 10 },
+          { type: "track", query: searchItem, limit: 30 },
           function(err, data) {
             if (err) {
               return console.log("Error occurred: " + err);
@@ -47,7 +47,16 @@ switch (requestType) {
         break;
 
     case "concert-this":
-        var queryURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
+        var queryURL = "https://rest.bandsintown.com/artists/" + searchItem + "/events?app_id=codingbootcamp";
+        axios.get(queryURL).then(function(response) {
+          if (response.data[0] != undefined) {
+            console.log("Venue Name: " + response.data[0].venue.name);
+            console.log("Venue Location: " + response.data[0].venue.city + ", " + response.data[0].venue.country);
+            console.log("Venue Name: " + moment(response.data[0].datetime).format("MM/DD/YYYY"));
+            return false;
+          }
+          console.log("Your band is not touring right now.")
+        });
 
         break;
 
