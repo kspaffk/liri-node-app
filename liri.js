@@ -50,10 +50,15 @@ function runLiri(requestType, searchItem) {
           break;
 
       case "concert-this":
+          if (searchItem === undefined) {
+            searchItem = "Taylor Swift";
+        }
+
           var queryURL = "https://rest.bandsintown.com/artists/" + searchItem + "/events?app_id=codingbootcamp";
           axios.get(queryURL).then(function(response) {
             if (response.data[0] != undefined) {
-              output = "  ------------  \nVenue Name: " + response.data[0].venue.name + 
+              output = "  ------------  \nArtist: " + response.data[0].lineup[0] +
+              "\nVenue Name: " + response.data[0].venue.name + 
               "\nVenue Location: " + response.data[0].venue.city + ", " + response.data[0].venue.country + 
               "\nVenue Name: " + moment(response.data[0].datetime).format("MM/DD/YYYY") + 
               "\n  ------------  \n";
