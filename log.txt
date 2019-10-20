@@ -1,0 +1,103 @@
+>> node liri.js spotify-this-song "catapult"
+  ------------  
+Song Name: Catapult
+Artist: Counting Crows
+Album: Recovering The Satellites
+No song preview is available.
+  ------------  
+>> node liri.js spotify-this-song "catapult"
+  ------------  
+Song Name: Catapult
+Artist: Counting Crows
+Album: Recovering The Satellites
+No song preview is available.
+  ------------  
+>> node liri.js spotify-this-song "i want it that way"
+  ------------  
+Song Name: I Want It That Way
+Artist: Backstreet Boys
+Album: The Hits--Chapter One
+Listen to a bit of the song: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=16e631e2d50a4bd991d760ba6e599c02
+  ------------  
+>> node liri.js spotify-this-song "caraakaka"
+  ------------  
+There was no exact match to that song name.
+  ------------  
+>> node liri.js concert-this "cake"
+  ------------  
+Venue Name: Salle Pleyel
+Venue Location: Paris, France
+Venue Name: 10/19/2019
+  ------------  
+>> node liri.js concert-this "cake"
+  ------------  
+Venue Name: Salle Pleyel
+Venue Location: Paris, France
+Venue Name: 10/19/2019
+  ------------  
+>> node liri.js concert-this "INXS"
+Your band is not touring right now.
+>> node liri.js concert-this "INXS"
+  ------------  
+Your band is not touring right now.
+  ------------  
+>> node liri.js concert-this "metallica"
+  ------------  
+Venue Name: Mt Smart Stadium
+Venue Location: Auckland, New Zealand
+Venue Name: 11/02/2019
+  ------------  
+>> node liri.js movie-this "metallica"
+>> node liri.js movie-this "tombstone"
+>> node liri.js movie-this "tombstone"
+  ------------  
+Song Name: I Want It That Way
+Artist: Backstreet Boys
+Album: The Hits--Chapter One
+Listen to a bit of the song: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=16e631e2d50a4bd991d760ba6e599c02
+  ------------  
+>> node liri.js movie-this "tombstone"
+  ------------  
+Movie Title: Tombstone
+Year Released: 1993
+Rating: R
+IMDB Rating: 7.8
+Rotten Tomatoes Rating: 73%
+Country Produced: USA
+Language: English, Latin
+Plot: A successful lawman's plans to retire anonymously in Tombstone, Arizona, are disrupted by the kind of outlaws he was famous for eliminating.
+Actors: Kurt Russell, Val Kilmer, Sam Elliott, Bill Paxton
+  ------------  
+>> node liri.js movie-this "raakkakkke"
+>> node liri.js movie-this "raakkakkke"
+Movie not found!>> node liri.js movie-this "raakkakkke"
+  ------------  
+Movie not found!
+  ------------  
+>> node liri.js movie-this "tombstone"
+  ------------  
+Movie Title: Tombstone
+Year Released: 1993
+Rating: R
+IMDB Rating: 7.8
+Rotten Tomatoes Rating: 73%
+Country Produced: USA
+Language: English, Latin
+Plot: A successful lawman's plans to retire anonymously in Tombstone, Arizona, are disrupted by the kind of outlaws he was famous for eliminating.
+Actors: Kurt Russell, Val Kilmer, Sam Elliott, Bill Paxton
+  ------------  
+>> node liri.js do-what-it-says "undefined"
+  ------------  
+Song Name: I Want It That Way
+Artist: Backstreet Boys
+Album: The Hits--Chapter One
+Listen to a bit of the song: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=16e631e2d50a4bd991d760ba6e599c02
+  ------------  
+>> node liri.js do-what-it-says "undefined"
+>> node liri.js spotify-this-song "I Want it That Way"
+  ------------  
+Song Name: I Want It That Way
+Artist: Backstreet Boys
+Album: The Hits--Chapter One
+Listen to a bit of the song: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=16e631e2d50a4bd991d760ba6e599c02
+  ------------  
