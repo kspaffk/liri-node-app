@@ -1,15 +1,108 @@
 >> node liri.js concert-this "metallica"
   ------------  
-Band wasn't found. Try again!
-  ------------  
->> node liri.js concert-this "Metallica"
-  ------------  
-Band wasn't found. Try again!
-  ------------  
->> node liri.js concert-this "Metallica"
-  ------------  
 Artist: Metallica
 Venue Name: Adelaide Oval
 Venue Location: North Adelaide, Australia
-Venue Name: 10/20/2019
+Venue Date: 10/20/2019
+  ------------  
+>> node liri.js concert-this "doors"
+  ------------  
+Your band is not touring right now.
+  ------------  
+>> node liri.js concert-this "undefined"
+  ------------  
+Artist: Taylor Swift
+Venue Name: Werchter Boutique
+Venue Location: Rotselaar, Belgium
+Venue Date: 06/20/2020
+  ------------  
+>> node liri.js spotify-this-song "kickstart my heart"
+  ------------  
+Song Name: Kickstart My Heart
+Artist: Mötley Crüe
+Album: Dr. Feelgood
+Listen to a bit of the song: https://p.scdn.co/mp3-preview/9d80a2a34ae97c2204a0a5dbeafcd447866002ff?cid=16e631e2d50a4bd991d760ba6e599c02
+  ------------  
+>> node liri.js spotify-this-song "the negotiation limerick file"
+  ------------  
+Song Name: The Negotiation Limerick File
+Artist: Beastie Boys
+Album: Hello Nasty (Deluxe Version/Remastered 2009)
+No song preview is available.
+  ------------  
+>> node liri.js spotify-this-song "undefined"
+  ------------  
+Song Name: The Sign
+Artist: Ace of Base
+Album: The Sign (US Album) [Remastered]
+Listen to a bit of the song: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=16e631e2d50a4bd991d760ba6e599c02
+  ------------  
+>> node liri.js movie-this "tombstone"
+  ------------  
+Movie Title: Tombstone
+Year Released: 1993
+Rating: R
+IMDB Rating: 7.8
+Rotten Tomatoes Rating: 73%
+Country Produced: USA
+Language: English, Latin
+Plot: A successful lawman's plans to retire anonymously in Tombstone, Arizona, are disrupted by the kind of outlaws he was famous for eliminating.
+Actors: Kurt Russell, Val Kilmer, Sam Elliott, Bill Paxton
+  ------------  
+>> node liri.js movie-this "sleepy hallow"
+  ------------  
+Movie not found!
+  ------------  
+>> node liri.js movie-this "sleepy hollow"
+  ------------  
+Movie Title: Sleepy Hollow
+Year Released: 1999
+Rating: R
+IMDB Rating: 7.3
+Rotten Tomatoes Rating: 68%
+Country Produced: USA, Germany
+Language: English, Latin
+Plot: Ichabod Crane is sent to Sleepy Hollow to investigate the decapitations of three people, with the culprit being the legendary apparition, The Headless Horseman.
+Actors: Johnny Depp, Christina Ricci, Miranda Richardson, Michael Gambon
+  ------------  
+>> node liri.js movie-this "undefined"
+  ------------  
+Movie Title: Mr. Nobody
+Year Released: 2013
+Rating: R
+IMDB Rating: 7.8
+Rotten Tomatoes Rating: 67%
+Country Produced: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+  ------------  
+>> node liri.js do-what-it-says "undefined"
+>> node liri.js spotify-this-song "I Want it That Way"
+  ------------  
+Song Name: I Want It That Way
+Artist: Backstreet Boys
+Album: The Hits--Chapter One
+Listen to a bit of the song: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=16e631e2d50a4bd991d760ba6e599c02
+  ------------  
+>> node liri.js do-what-it-says "undefined"
+>> node liri.js movie-this "being john malkovich"
+  ------------  
+Movie Title: Being John Malkovich
+Year Released: 1999
+Rating: R
+IMDB Rating: 7.7
+Rotten Tomatoes Rating: 93%
+Country Produced: USA
+Language: English
+Plot: A puppeteer discovers a portal that leads literally into the head of movie star John Malkovich.
+Actors: John Cusack, Cameron Diaz, Ned Bellamy, Eric Weinstein
+  ------------  
+>> node liri.js do-what-it-says "undefined"
+>> node liri.js concert-this "cake"
+  ------------  
+Artist: CAKE
+Venue Name: DE ROMA
+Venue Location: Borgerhout, Belgium
+Venue Date: 10/25/2019
   ------------  

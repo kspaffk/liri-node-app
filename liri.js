@@ -60,7 +60,7 @@ function runLiri(requestType, searchItem) {
               output = "  ------------  \nArtist: " + response.data[0].lineup[0] +
               "\nVenue Name: " + response.data[0].venue.name + 
               "\nVenue Location: " + response.data[0].venue.city + ", " + response.data[0].venue.country + 
-              "\nVenue Name: " + moment(response.data[0].datetime).format("MM/DD/YYYY") + 
+              "\nVenue Date: " + moment(response.data[0].datetime).format("MM/DD/YYYY") + 
               "\n  ------------  \n";
 
               outputToFile(output);
@@ -80,7 +80,7 @@ function runLiri(requestType, searchItem) {
           searchItem = "Mr. Nobody";
         }
 
-        var queryURL = "http://www.omdbapi.com/?apikey=" + keys.obdb_key + "&t=" + searchItem;
+        var queryURL = "http://www.omdbapi.com/?apikey=" + keys.omdb_key + "&t=" + searchItem;
 
         axios.get(queryURL).then(function(response) {
           if (response.data.Error) {
@@ -89,11 +89,18 @@ function runLiri(requestType, searchItem) {
             outputToFile(output);
             return false;
           }
-          response.data.Ratings.forEach(element => {
-            if (element.Source === "Rotten Tomatoes") {
-              tomRating = "\nRotten Tomatoes Rating: " + element.Value;
-            }
-          });
+          var tomRating = "";
+          if (response.data.Ratings[0]) {
+            response.data.Ratings.forEach(element => {
+              if (element.Source === "Rotten Tomatoes") {
+                tomRating = "\nRotten Tomatoes Rating: " + element.Value;
+              } else if (tomRating === "") {
+                tomRating = "\nRotten Tomatoes rating doesn't exist!";
+              }
+            });
+          } else {
+              tomRating = "\nRotten Tomatoes rating doesn't exist!";
+          }
 
           output = "  ------------  \nMovie Title: " + response.data.Title + 
           "\nYear Released: " + moment(response.data.Released, "DD MMM YYYY").format("YYYY") + 
