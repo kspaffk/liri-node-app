@@ -70,6 +70,10 @@ function runLiri(requestType, searchItem) {
               outputToFile(output);
               console.log(output);
             }
+          }).catch(function (error) {
+            if (error) {
+              console.log("  ------------  \nThere was an error returning your query.\n  ------------  \n")
+            }
           });
 
           break;
@@ -114,6 +118,10 @@ function runLiri(requestType, searchItem) {
 
           outputToFile(output);
           console.log(output);
+        }).catch(function (error) {
+          if (error) {
+            console.log("  ------------  \nThere was an error returning your query.\n  ------------  \n")
+          }
         });
         break;
       
